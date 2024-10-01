@@ -5,6 +5,11 @@
   <title>Rahul Krishna</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style type="text/css">
+<!--
+ .tab { margin-left: 40px; }
+-->
+</style>
 </head>
 
 <body>
@@ -150,7 +155,28 @@
 
     <section id="projects">
       <h2>Projects</h2> 
-      <p>Here are some small projects I have worked on, and am working on.</p>
+      <p>Here are some side projects I have worked on in the past.</p>
+
+      <h3><a href="https://github.com/rmkrishn/pred-pol-trading-lobbying">Money in politics and politicians in money</a>  </h3>
+      <p class="tab"> (joint with Paul VanKoughnett) </p>
+      <p><a href="https://www.erdosinstitute.org/project-database/spring-2024/data-science-boot-camp/money-in-politics-and-politicians-in-money"> Presentation and summary. </a> </p>
+      <p> This is a data science project, carried out as part of the Erdos Institute Spring 2024 semester. <br>
+      In this project, we worked with two sources of data: 
+      <ol>
+        <li>Lobbying disclosures, available from the Office of the Senate. </li> 
+        <li>Individual financial disclosures of congresspeople, obtained through QuiverQuant.</li>
+      </ol>
+      From the lobbying disclosures (1), we extract data on how much spending occurs per quarter by companies, and what broad topics/issues they are lobbying about. From (2), we extract data on what individual stocks congresspeople are trading at a given time.
+      The goal of the project is to try to identify the extent to which lobbying data (1) can help to predict trading behavior of politicians, as measured by (2). <br>
+      We found, after trying a number of different time series models, that while there is no visible correlation between lobbying activity and trading, a multivariate VARIMA model that takes lobbying into account significantly outperforms a univariate model. </p>
+    
+   <h3><a href="https://github.com/julianrosen/erdos_dl_recanvo_project">A Vocal-Cue Interpreter for Minimally Verbal Individuals</a>   </h3>
+      <p class="tab"> (joint with Monalisa Dutta, Sarasi Jayasekara, Alessandro Malusà, Atharva Patil, and Julian Rosen)</p>
+      <p><a href= "https://www.erdosinstitute.org/project-database/may-summer-2024/deep-learning-boot-camp/a-vocal-cue-interpreter-for-minimally-verbal-individuals"> Presentation and summary. </a> </p>
+      <p> This is a deep learning project, carried out as part of the Erdos Institute Summer 2024 semester. We won a "top project" award for this work.<br>
+        Nonverbal vocalizations play an important role in communication, particularly for individuals with few spoken words. While caretakers of minimally-verbal individuals often learn to interpret nonverbal vocalizations, the vocalizations can be difficult to interpret by people unfamiliar with the individual. <br>
+        In this project, we used the ReCANVo dataset - a dataset of nonverbal vocalizations by minimally verbal individuals, labelled with meanings by their caretakers - to train a model that can accurately predict labels. <br>
+        After much experimentation, we obtained good results by combining a pretrained transformer model (pretrained HuBERT) for feature extraction together with a 3-layer feed forward neural net for classification.
     </section>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
